@@ -1,0 +1,32 @@
+<view class="container">
+  <!-- LOGO标签 -->
+    <image src="../../images/logo.png" class='headimg'></image>
+  <view class="num-wrap">
+  <view class='search-input'>
+     <input type="number" name="" placeholder="请输入您要查询的序列号" class="num-box" value="{{phoneNum}}" bindinput="phoneNum" />
+  </view>
+    <view class="iconfont icon-guanbi2fill close-num" bindtap="cleanPhoneNum"></view>
+    <button class="search-btn" bindtap="sendPhoneNum">查询</button>
+    
+  </view>
+ 
+
+
+
+
+  <view class="into-item">
+     <text class="title">省份：</text><text class="text">{{phoneInfo.province}}</text>
+  </view>
+  <view class="into-item">
+     <text class="title">城市：</text><text class="text">{{phoneInfo.city}}</text>
+  </view>
+  <view class="into-item">
+     <text class="title">运营商：</text><text class="text">{{phoneInfo.company}}</text>
+  </view>
+  <view class="into-item">
+     <text class="title">区号：</text><text class="text">{{phoneInfo.areacode}}</text>
+  </view>
+  <view class="into-item">
+     <text class="title">邮编：</text><text class="text">{{phoneInfo.zip}}</text>
+  </view>
+</view>
